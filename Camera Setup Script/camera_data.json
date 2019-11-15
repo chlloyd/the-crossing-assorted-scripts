@@ -1,0 +1,10 @@
+{
+  "cameras": [
+    {
+      "name": "ARRI ALEXA Mini",
+      "units": "mm",
+      "sensor_width": 26.40,
+      "sensor_height": 14.85
+    }
+  ]
+}

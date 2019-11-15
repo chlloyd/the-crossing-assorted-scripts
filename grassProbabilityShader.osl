@@ -1,0 +1,21 @@
+surface grass_shader
+		[[ string help = \"Randomised Grass Mesh Colouring\" ]]
+(
+	float input = 0.1,
+	float probabilityA = 0.333,
+	float probabilityB = 0.666,
+	color A = color(0, 1, 0),
+	color B = color(0, 0.75, 0),
+	color C = color(0, 0.5, 0),
+	output color resultRGB = 0
+
+)
+
+{
+	if (input <= probabilityA)
+		resultRGB = A;
+	if (input <= probabilityB)
+		resultRGB = B;
+	else
+		resultRGB = C;
+}
