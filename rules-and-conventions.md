@@ -13,7 +13,6 @@ These program versions need to be followed to safeguard us against render errors
 * Adobe Premiere Pro
 * Logic Pro X
 
-
 ---
 
 ## Assets
@@ -28,6 +27,25 @@ All model assets must be either a Maya scene (.ma not .mb), Autodesk FBX (.fbx) 
 Clean topology is essential. The render must be able to render the object with **both the CPU and GPU Arnold renderers**. Making sure the GPU renders the scene makes other jobs further down the pipeline much easier.
 
 It must not have any abnormalities when being rendered. E.g. Faces inside other face.
+
+Possible problem that the geometry may need fixing:
+* More than 4 sided faces
+* Concave faces
+* Faces with holes
+* Non-Planar faces
+* Lamina faces/double faces
+* Non-manifold geometry
+* Edges with zero length
+* Overlapping geometry / intercepting geometry
+* Unmerged vertices and open border edges
+
+Possible problems with geometry UV mapping:
+* Zero mapped UVs
+* Missing UVs
+* Warped UVs
+
+A quick google will explain exactly what they are. 
+
 
 ---
 
@@ -234,7 +252,7 @@ The following render settings will be used for all renders:
 ### Rendering Colour Space
 Within this project we will use the ACES (Academy Color Encoding System). Specifically ACES-ACES2065-1, rendering in ACEScg. This provides a wider color gamut than sRGB or REC709. ACES will allow for greater detail within the highlights and shadows of the renders and more flexibility within compositing. The image below show the aces colour space compared with sRGB.
 
-![Image of ACES colour space compared with rRGB](https://acescentral.com/uploads/default/original/1X/6c9849deef6788279c062bed799195057fd8fba1.png)
+![Image of ACES colour space compared with sRGB](https://acescentral.com/uploads/default/original/1X/6c9849deef6788279c062bed799195057fd8fba1.png)
 
 * [Maya Getting Started with Color Management](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2018/ENU/Maya-Rendering/files/GUID-B260195C-A0FE-4F51-9EA2-099B61B7725A-htm.html)
 * [Maya Color Space Management Help](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2018/ENU/Maya-Rendering/files/GUID-5CDEBBB6-18F7-4062-B2AF-BDFDF11501F1-htm.html)
