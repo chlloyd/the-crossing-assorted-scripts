@@ -100,7 +100,7 @@ Use these guide for help:
 
 ####This Animation Project
 
-#####Textures
+##### Textures
 
 For this animation project we will be doing the following:
 
@@ -113,7 +113,7 @@ Normal | Utility - RAW | aiNormalMap.input - aiNormalMap.outValue > Normal Camer
 Opacity | Utility - RAW + alpha is luminance| Opacity
 Height | Utility - RAW + alpha is luminance| displacementShader > Shading Group displacement Input
 
-#####Shaders
+##### Shaders
 All shaders will have the following:
 * specular roughness at 0.6
 * normal weight at 0.1
