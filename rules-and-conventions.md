@@ -98,7 +98,7 @@ Use these guide for help:
 * [Substance Painter Textures to Arnold](https://docs.substance3d.com/integrations/arnold-5-for-maya-157352171.html)
 * [Substance Painter Export Help](https://docs.substance3d.com/spdoc/export-window-98959396.html)
 
-####This Animation Project
+#### This Animation Project
 
 ##### Textures
 
